@@ -157,3 +157,66 @@ footer p {
     font-size: 24px;
     margin-top: 32px
 }
+
+.close-icon {
+    margin-left: 125px ;
+    cursor: pointer; /* for showing cursor that it is clickable */
+    display: none; /* to hide the cross sign in laptop */
+   }
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 968px) {
+    nav a{
+        font-size: 12px;
+    }
+
+    nav a+a {
+        margin-left: 32px;
+    }
+
+    header {
+        padding: 16px 24px;
+    }
+
+    .pic1 {
+        margin-top: 48px;
+    }
+
+}
+
+@media(max-width: 768px) {
+   header {
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+   }
+
+   nav {
+    position: absolute;
+    background-color: #FFFFFFBF;
+    flex-direction: column;
+    right: 24px;
+    top: 24px;
+    padding: 24px;
+    display: none; /* to hide nav tag so it only shows after clicking the button*/
+   }
+
+   nav a + a {
+    margin: 0%;
+    margin-top: 16px;
+   }
+
+   .close-icon{
+    display: block; /* to show cross sign in mobile */
+   }
+
+   .hamburger-icon{
+    display: block;
+   }
+   
+}
